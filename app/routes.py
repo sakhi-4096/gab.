@@ -6,6 +6,7 @@ from flask_login import logout_user
 
 @app.route('/')
 @app.route('/index')
+@login_required
 def index():
     user = {'username': 'Sakhile'}
     posts = [
