@@ -1,8 +1,10 @@
-from flask import render_template, flash, redirect
-from app import app
+from urllib.parse import urlsplit
+from flask import render_template, flash, redirect, url_for, request
+from flask_login import login_user, logout_user, current_user, login_required
+import sqlalchemy as sa
+from app import app, db
 from app.forms import LoginForm
-from flask_login import login_required, logout_user
-
+from app.models import User
 
 @app.route('/')
 @app.route('/index')
