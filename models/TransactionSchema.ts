@@ -1,5 +1,3 @@
-// TransactionSchema.ts
-
 import { Schema, model } from 'mongoose';
 
 // Define schema for transactions
