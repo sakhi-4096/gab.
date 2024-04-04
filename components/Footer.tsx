@@ -1,13 +1,10 @@
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="flex w-full justify-center border-t-2 border-gray-900 py-12 h-10">
-      <a
-        href='https://www.pointer.gg?utm_source=solana-pay'
-        target='_blank'
-        rel='noopener noreferrer'
-      >
-        Learn web3 dev and earn crypto rewards at{" "}
-        <span>Pointer</span>
+      <a>
+        &copy; {currentYear} Boring Company Inc. All rights reserved.
       </a>
     </footer>
   )
